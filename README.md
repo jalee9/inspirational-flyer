@@ -19,5 +19,6 @@ To get this project up and running on your local machine, follow these steps:
 
 git clone https://github.com/jalee9/inspirational-flyer.git
 cd inspirational-flyer
+
 open index.html # Or double-click the file to open it in your default web browser
 
