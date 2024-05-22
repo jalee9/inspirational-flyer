@@ -1,0 +1,93 @@
+/* Global settings for box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Style settings for the body including font, full height, and center alignment */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f8ff;
+}
+
+/* Container for the main content */
+.container {
+    text-align: center;
+    margin-bottom: 50px; /* Space above footer */
+}
+
+/* styling for main image */
+.inspirational-image {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 300px; /* Limits the height to avoid overly large display */
+    object-fit: cover; /* Ensures the image covers the area appropriately without distortion */
+    border-radius: 10px; /* Optional: adds rounded corners to the image */
+    margin: 20px 0; /* Adds vertical spacing around the image */
+}
+/* styling for the paragraph text */
+.encouraging-note {
+    margin: 20px auto;
+    color: #404663; /* Dark color for better readability */
+    font-size: 1.2rem;
+    width: 80%; /* Control the width to maintain readability */
+    text-align: center; /* Center the text for better visual balance */
+    padding: 10px;
+    background: linear-gradient(120deg, #f6d365, #fda085); /* Gradient background for a vibrant look */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+p {
+    margin: 0; /* Remove default margin for better spacing */
+    color: #404663; /* Dark color for better readability */
+    font-size: 1.2rem; /* Slightly larger font size for better readability */
+    text-align: center; /* Center the text for better visual balance */
+}
+
+/* Styling for the buttons that trigger confetti */
+.tear-offs button {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #404663;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.1s, box-shadow 0.1s; /* Transition for smooth animation */
+}
+
+/* Animation effect for when the button is clicked */
+.tear-offs button:active {
+    transform: scale(0.95); /* Slightly scale down the button */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add shadow for depth */
+}
+
+/* Footer styling, fixed at the bottom */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle shadow for separation */
+}
+
+/* Styling for text and images in the footer */
+footer p {
+    margin: 0;
+    color: #404663;
+}
+
+footer a img {
+    width: 24px;
+    height: 24px;
+}
